@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HFDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {search = id; updateDS = id; }; 
+            CLASS = HiFindController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                aHFDataSource = HFDataSource; 
+                directoryNameField = NSTextField; 
+                filePatternField = NSTextField; 
+                regexPatternField = NSTextField; 
+                resultsTableView = NSTableView; 
+                resultsView = NSTextView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {msgAction = id; }; 
+            CLASS = SayHi; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
