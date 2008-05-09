@@ -60,7 +60,7 @@
 	// divide file by newlines
 	rows = [contents componentsSeparatedByString:@"\n"];
 	NSMutableArray *records;
-	records = [NSMutableArray arrayWithCapacity:[rows count]];
+	records = [[NSMutableArray arrayWithCapacity:[rows count]] retain];
 	NSDictionary *curRecord;
 	NSString *curRow;
 	NSEnumerator *enm = [rows objectEnumerator];
@@ -70,8 +70,8 @@
 			[records addObject:curRecord];
 		}
 	}
-	//[records release];
-	return records;
+	//[records autorelease];
+	return [records autorelease];
 }
 -(NSDictionary*)toRecord:(NSString*)fromLine{
 	NSDictionary *curRecord;

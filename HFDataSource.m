@@ -17,12 +17,16 @@
 	return self;
 }
 
--(void)appendRecord:(NSString*) fileName havingLine:(NSString*)matchingLine{
-	NSDictionary *curRecord;
-	curRecord = [NSDictionary dictionaryWithObjectsAndKeys:fileName,@"filename",matchingLine,@"matching_line",nil];
-	// append the record to fileRecords
-	[fileRecords addObject:curRecord];
-	
+-(id)initWithArray:(NSArray * )fromArray{
+	[super init];
+	[fromArray retain];
+	fileRecords = fromArray;
+	return self;
+}
+-(id)replaceContents:(NSArray * )fromArray{
+	[fromArray retain];
+	[fileRecords release];
+	fileRecords = fromArray;
 }
 
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView{
@@ -42,18 +46,15 @@
 }
 
 -(void)appendFromArray:(NSArray*)fromArray{
+	//[fromArray retain];
 	[fileRecords addObjectsFromArray:fromArray];
 }
 
 - (void)dealloc{
-
 	if(fileRecords != nil){
 		[fileRecords release];
 		fileRecords = nil;
 	}
 	[super dealloc];
-
-
-
 }
 @end

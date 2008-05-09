@@ -3,11 +3,12 @@
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = HFDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
-            ACTIONS = {updateDS = id; updateDSFromFile = id; }; 
+            ACTIONS = {chooseDirectory = id; initButton = id; updateDS = id; updateDSFromFile = id; }; 
             CLASS = HiFindController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
                 aHFDataSource = HFDataSource; 
+                directoryBrowser = NSBrowser; 
                 directoryNameField = NSTextField; 
                 filePatternField = NSTextField; 
                 regexPatternField = NSTextField; 

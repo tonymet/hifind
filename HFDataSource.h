@@ -15,11 +15,12 @@
 }
 // intialize array
 //-(void)init;
--(void)appendRecord:(NSString*)fileName havingLine:(NSString*)matchingLine;
+-(id)initWithArray:(NSArray * )fromArray;
+-(id)replaceContents:(NSArray * )fromArray;
 -(void)appendFromDict:(NSDictionary*)fromDict;
 -(void)appendFromArray:(NSArray*)fromArray;
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView;
-- (id)tableView:(NSTableView *)aTableView
+-(id)tableView:(NSTableView *)aTableView
     objectValueForTableColumn:(NSTableColumn *)aTableColumn
 			row:(int)rowIndex;
 @end

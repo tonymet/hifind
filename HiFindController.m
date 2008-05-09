@@ -23,24 +23,23 @@
 }
 
 -(IBAction)updateDS:(id)sender{
-	// call init to clear the data source
-	[aHFDataSource init];
-	[aHFDataSource appendFromArray:
-		[aHiFind allRecords:
+	NSArray *records;
+	records = [[aHiFind allRecords:
 			[aHiFind 
 				grepFilesMatchingPattern:[filePatternField stringValue] 
 				inDirectory:[directoryNameField stringValue] 
 				withRegex:[regexPatternField stringValue]
 			]
-		]
-	];
+		] retain];
+	[aHFDataSource replaceContents:records];
+	//[records autorelease];
 	[resultsTableView reloadData];
 }
+
 - (IBAction)updateDSFromFile:(id)sender{
 	// call init to clear the data source
 	[aHFDataSource release];
-	[aHFDataSource init];
-	[aHFDataSource appendFromArray:
+	[aHFDataSource initFromArray:
 		[aHiFind allRecords:
 			[aHiFind readFromFile:[directoryNameField stringValue]]
 		]
