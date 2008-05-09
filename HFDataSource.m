@@ -13,7 +13,7 @@
 
 -(id)init{
 	[super init];
-	fileRecords = [[NSMutableArray alloc] initWithCapacity: 256];
+	fileRecords = [[NSMutableArray arrayWithCapacity: 256] retain];
 	return self;
 }
 
@@ -43,5 +43,17 @@
 
 -(void)appendFromArray:(NSArray*)fromArray{
 	[fileRecords addObjectsFromArray:fromArray];
+}
+
+- (void)dealloc{
+
+	if(fileRecords != nil){
+		[fileRecords release];
+		fileRecords = nil;
+	}
+	[super dealloc];
+
+
+
 }
 @end

@@ -15,4 +15,6 @@
 		withRegex:(NSObject*)regexPattern;
 -(NSArray*)allRecords:(NSFileHandle*)fromFile;
 -(NSObject*)fileToString:(NSFileHandle*)fromFile;
+-(NSDictionary*)toRecord:(NSString*)fromLine;
+-(NSFileHandle*)readFromFile:(NSString*)fileName;
 @end

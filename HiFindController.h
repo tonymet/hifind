@@ -17,9 +17,13 @@
 	IBOutlet NSTextView  *resultsView;
 	HiFind *aHiFind;
 	IBOutlet HFDataSource *aHFDataSource;
+	IBOutlet NSBrowser	 *directoryBrowser;
 	IBOutlet NSTableView *resultsTableView;
+	NSOpenPanel *aDirectoryChooser;
 }
 
-- (IBAction)search:(id)sender;
 - (IBAction)updateDS:(id)sender;
+- (IBAction)updateDSFromFile:(id)sender;
+- (IBAction)initButton:(id)sender;
+- (IBAction)chooseDirectory:(id)sender;
 @end

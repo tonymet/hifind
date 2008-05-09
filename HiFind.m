@@ -34,8 +34,13 @@
     NSFileHandle *file;
     file = [pipe fileHandleForReading];
 	
-
     [task launch];
+	return file;
+}
+
+-(NSFileHandle*)readFromFile:(NSString*)fileName{
+	NSFileHandle *file;
+	file = [NSFileHandle fileHandleForReadingAtPath:fileName];
 	return file;
 }
 
@@ -43,6 +48,7 @@
 	NSData *data;
 	NSString *string;
     data = [fromFile readDataToEndOfFile];
+	[fromFile closeFile];
 	string = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
 	return string;
 }
@@ -54,30 +60,45 @@
 	// divide file by newlines
 	rows = [contents componentsSeparatedByString:@"\n"];
 	NSMutableArray *records;
-	records = [[NSMutableArray alloc] initWithCapacity:[rows count]];
-	int i = 0;
+	records = [NSMutableArray arrayWithCapacity:[rows count]];
 	NSDictionary *curRecord;
 	NSString *curRow;
-	NSArray *curRowParts;
-	for(i = 0; i < [rows count]; i++){
-		curRow = [rows objectAtIndex: i];
+	NSEnumerator *enm = [rows objectEnumerator];
+	while(curRow = [enm nextObject]){
 		curRecord = [self toRecord:curRow];
 		if(curRecord != nil){
 			[records addObject:curRecord];
 		}
 	}
+	//[records release];
 	return records;
 }
 -(NSDictionary*)toRecord:(NSString*)fromLine{
-	NSArray *curRowParts;
 	NSDictionary *curRecord;
-	curRowParts = [fromLine componentsSeparatedByString:@":"];
-	if([curRowParts count] < 2){
+	NSRange rName, rMatchingLine;
+	rName = [fromLine rangeOfString:@":"];
+
+	if(rName.location != NSNotFound){
+		// copy from beginning of string to location
+		rName.length = rName.location;
+		rName.location = 0;
+		rMatchingLine = NSMakeRange(rName.length + 1,[fromLine length] - rName.length - 1) ;
+	}
+	else{
+		rMatchingLine = NSMakeRange(0, 0);
+	}
+	
+	@try{
+		curRecord = [NSDictionary dictionaryWithObjectsAndKeys:
+			[fromLine substringWithRange:rName], @"filename" ,
+			[fromLine substringWithRange:rMatchingLine] , @"matching_line" , nil];
+
+	}
+	@catch ( NSException  *e){
+		NSLog([NSString stringWithFormat:@"Error parsing line %@", fromLine]);
 		return nil;
 	}
-	curRecord = [NSDictionary dictionaryWithObjectsAndKeys:
-			[curRowParts objectAtIndex:0] , @"filename" ,
-			[curRowParts objectAtIndex:1] , @"matching_line" , nil];
+	//[curRecord release];
 	return curRecord;
 }
 @end

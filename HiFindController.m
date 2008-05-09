@@ -14,19 +14,12 @@
 -(id)init{
 	[super init];
 	aHiFind = [[HiFind alloc]init];
+	aDirectoryChooser = [[NSOpenPanel openPanel] retain];
+	[aDirectoryChooser setCanChooseFiles:NO];
+	[aDirectoryChooser setCanChooseDirectories:YES];
+	[aDirectoryChooser setAllowsMultipleSelection:NO];
+	[aDirectoryChooser setTitle:@"Choose a Directory"];
 	return self;
-}
-
-- (IBAction)search:(id)sender{
-	[resultsView setString:
-	[aHiFind fileToString:
-		[aHiFind 
-			grepFilesMatchingPattern:[filePatternField stringValue] 
-			inDirectory:[directoryNameField stringValue] 
-			withRegex:[regexPatternField stringValue]
-		]
-	]
-	];
 }
 
 -(IBAction)updateDS:(id)sender{
@@ -42,6 +35,42 @@
 		]
 	];
 	[resultsTableView reloadData];
+}
+- (IBAction)updateDSFromFile:(id)sender{
+	// call init to clear the data source
+	[aHFDataSource release];
+	[aHFDataSource init];
+	[aHFDataSource appendFromArray:
+		[aHiFind allRecords:
+			[aHiFind readFromFile:[directoryNameField stringValue]]
+		]
+	];
+	[resultsTableView reloadData];
+}
+
+- (IBAction)initButton:(id)sender{
+
+}
+
+- (IBAction)chooseDirectory:(id)sender{
+	int result = nil;
+	NSString *selectedFile;
+	result = [aDirectoryChooser runModalForDirectory:nil
+                    file:nil types:nil];
+	 if (result == NSOKButton) {
+		selectedFile = [aDirectoryChooser filename];
+		[directoryNameField setStringValue:selectedFile];
+	 }
+
+}
+-(void)dealloc{
+	if(aHiFind != nil){
+		[aHiFind release];
+		aHiFind = nil;
+	
+	}
+	
+	[super dealloc];
 }
 
 
