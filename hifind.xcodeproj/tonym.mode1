@@ -188,8 +188,8 @@
 	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
-		<integer>-1</integer>
-		<integer>-1</integer>
+		<integer>1091</integer>
+		<integer>300</integer>
 	</array>
 	<key>Perspectives</key>
 	<array>
@@ -263,7 +263,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -288,7 +288,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>267 157 1091 654 0 0 1440 878 </string>
+						<string>188 171 1091 654 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -306,7 +306,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HiFind.m</string>
+								<string>HiFindController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -314,11 +314,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HiFind.m</string>
+										<string>HiFindController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2AB18D0E0DD53EEF00EBAC35</string>
+										<string>2A52B37E0DD630E000F634DA</string>
 										<key>history</key>
 										<array>
 											<string>2ACC2F5A0DC529D2006EBBE0</string>
@@ -329,10 +329,10 @@
 											<string>2A694A750DD538DA007F53D8</string>
 											<string>2AB18CF60DD53EEF00EBAC35</string>
 											<string>2AB18CF70DD53EEF00EBAC35</string>
-											<string>2AB18CF80DD53EEF00EBAC35</string>
-											<string>2AB18CF90DD53EEF00EBAC35</string>
-											<string>2AB18CFA0DD53EEF00EBAC35</string>
-											<string>2A694AC20DD53BB0007F53D8</string>
+											<string>2A52B3200DD623F300F634DA</string>
+											<string>2A52B3210DD623F300F634DA</string>
+											<string>2A52B3680DD62D5900F634DA</string>
+											<string>2A52B3570DD62C2F00F634DA</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -348,25 +348,15 @@
 											<string>2ACC2F6E0DC529D2006EBBE0</string>
 											<string>2ACC2F700DC529D2006EBBE0</string>
 											<string>2A694A7A0DD538DA007F53D8</string>
-											<string>2AB18CFB0DD53EEF00EBAC35</string>
-											<string>2AB18CFC0DD53EEF00EBAC35</string>
-											<string>2AB18CFD0DD53EEF00EBAC35</string>
-											<string>2AB18CFE0DD53EEF00EBAC35</string>
-											<string>2AB18CFF0DD53EEF00EBAC35</string>
-											<string>2AB18D000DD53EEF00EBAC35</string>
-											<string>2AB18D010DD53EEF00EBAC35</string>
-											<string>2AB18D020DD53EEF00EBAC35</string>
-											<string>2AB18D030DD53EEF00EBAC35</string>
-											<string>2AB18D040DD53EEF00EBAC35</string>
-											<string>2AB18D050DD53EEF00EBAC35</string>
-											<string>2AB18D060DD53EEF00EBAC35</string>
-											<string>2AB18D070DD53EEF00EBAC35</string>
-											<string>2AB18D080DD53EEF00EBAC35</string>
-											<string>2AB18D090DD53EEF00EBAC35</string>
-											<string>2AB18D0A0DD53EEF00EBAC35</string>
-											<string>2AB18D0B0DD53EEF00EBAC35</string>
-											<string>2AB18D0C0DD53EEF00EBAC35</string>
-											<string>2AB18D0D0DD53EEF00EBAC35</string>
+											<string>2A52B3240DD623F300F634DA</string>
+											<string>2A52B3250DD623F300F634DA</string>
+											<string>2A52B3260DD623F300F634DA</string>
+											<string>2A52B3270DD623F300F634DA</string>
+											<string>2A52B33E0DD6290A00F634DA</string>
+											<string>2A52B3470DD6298500F634DA</string>
+											<string>2A52B34E0DD62A0200F634DA</string>
+											<string>2A52B3590DD62C2F00F634DA</string>
+											<string>2A52B3690DD62D5900F634DA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -380,7 +370,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {883, 454}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 157 1091 654 0 0 1440 878 </string>
+								<string>188 171 1091 654 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -400,7 +390,7 @@
 								<key>Frame</key>
 								<string>{{0, 459}, {883, 154}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 157 1091 654 0 0 1440 878 </string>
+								<string>188 171 1091 654 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -424,9 +414,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2AB18D0F0DD53EEF00EBAC35</string>
+				<string>2A52B3290DD623F300F634DA</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2AB18D100DD53EEF00EBAC35</string>
+				<string>2A52B32A0DD623F300F634DA</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -434,6 +424,14 @@
 			<string>xcode.toolbar.config.default</string>
 		</dict>
 		<dict>
+			<key>ChosenToolbarItems</key>
+			<array>
+				<string>buildOrClean</string>
+				<string>build-and-runOrDebug</string>
+				<string>com.apple.ide.PBXToolbarStopButton</string>
+				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>get-info</string>
+			</array>
 			<key>ControllerClassBaseName</key>
 			<string></string>
 			<key>IconName</key>
@@ -441,12 +439,10 @@
 			<key>Identifier</key>
 			<string>perspective.morph</string>
 			<key>IsVertical</key>
-			<integer>0</integer>
+			<false/>
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<integer>1</integer>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -471,7 +467,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>186</real>
+								<real>283</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -483,40 +479,42 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>080E96DDFE201D6D7F000001</string>
+								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
+								<string>1CC0EA4004350EF90041110B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>0</integer>
+									<integer>24</integer>
+									<integer>23</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 337}}</string>
+							<string>{{0, 0}, {283, 595}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
 						<key>XCIncludePerspectivesSwitch</key>
-						<integer>1</integer>
+						<true/>
 						<key>XCSharingToken</key>
 						<string>com.apple.Xcode.GFSharingToken</string>
 					</dict>
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 355}}</string>
+						<string>{{0, 0}, {300, 613}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>186</real>
+							<real>283</real>
 						</array>
-						<key>RubberWindowFrame</key>
-						<string>373 269 690 397 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>100%</string>
+					<string>300pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -530,6 +528,7 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
+				<string>2AB18D250DD541B900EBAC35</string>
 				<string>11E0B1FE06471DED0097A5F4</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -563,13 +562,14 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>2A1AEAD50DC3EC5800CABA83</string>
-		<string>2AB18D180DD53EEF00EBAC35</string>
+		<string>2A52B3320DD623F300F634DA</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/tonym/Documents/workspace/hifind/hifind.xcodeproj</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>/Users/tonym/Documents/workspace/hifind/hifind.xcodeproj</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 	</array>
 	<key>WindowString</key>
-	<string>267 157 1091 654 0 0 1440 878 </string>
+	<string>188 171 1091 654 0 0 1440 878 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -646,7 +646,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2A1AEAD50DC3EC5800CABA83</string>
-				<string>2AB18D110DD53EEF00EBAC35</string>
+				<string>2A52B32B0DD623F300F634DA</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -688,8 +688,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {294, 200}}</string>
-											<string>{{294, 0}, {400, 200}}</string>
+											<string>{{0, 0}, {292, 200}}</string>
+											<string>{{292, 0}, {402, 200}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -752,14 +752,14 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>2AB18D120DD53EEF00EBAC35</string>
+				<string>2A52B32C0DD623F300F634DA</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>2AB18D130DD53EEF00EBAC35</string>
-				<string>2AB18D140DD53EEF00EBAC35</string>
-				<string>2AB18D150DD53EEF00EBAC35</string>
-				<string>2AB18D160DD53EEF00EBAC35</string>
-				<string>2AB18D170DD53EEF00EBAC35</string>
-				<string>2AB18D180DD53EEF00EBAC35</string>
+				<string>2A52B32D0DD623F300F634DA</string>
+				<string>2A52B32E0DD623F300F634DA</string>
+				<string>2A52B32F0DD623F300F634DA</string>
+				<string>2A52B3300DD623F300F634DA</string>
+				<string>2A52B3310DD623F300F634DA</string>
+				<string>2A52B3320DD623F300F634DA</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debug</string>
@@ -786,12 +786,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HiFindController.m</string>
+										<string>HiFindController.h</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -812,8 +814,6 @@
 							<string>251pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -849,8 +849,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>2A694A200DD534F6007F53D8</string>
-				<string>2A694A210DD534F6007F53D8</string>
+				<string>2A52B35B0DD62C2F00F634DA</string>
+				<string>2A52B35C0DD62C2F00F634DA</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -1008,9 +1008,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>2AB18D190DD53EEF00EBAC35</string>
+				<string>2A52B3330DD623F300F634DA</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>2AB18D1A0DD53EEF00EBAC35</string>
+				<string>2A52B3340DD623F300F634DA</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>

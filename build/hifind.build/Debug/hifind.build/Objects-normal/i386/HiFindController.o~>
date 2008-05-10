@@ -1,0 +1,2 @@
+/Users/tonym/Documents/workspace/hifind/HiFindController.m: In function '-[HiFindController chooseDirectory:]':
+/Users/tonym/Documents/workspace/hifind/HiFindController.m:36: warning: unused variable 'newDirectoryItem'

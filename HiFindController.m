@@ -24,37 +24,26 @@
 
 -(IBAction)updateDS:(id)sender{
 	[aHiFind grepFilesMatchingPattern:[filePatternField stringValue] 
-			inDirectory:[directoryNameField stringValue] 
+			inDirectory:[directorySelect titleOfSelectedItem] 
 			withRegex:[regexPatternField stringValue]
 	];
 	[aHFDataSource replaceContentsFrom:aHiFind];
 	[resultsTableView reloadData];
 }
 
-- (IBAction)updateDSFromFile:(id)sender{
-	// call init to clear the data source
-	[aHFDataSource release];
-	[aHFDataSource initFromArray:
-		[aHiFind allRecords:
-			[aHiFind readFromFile:[directoryNameField stringValue]]
-		]
-	];
-	[resultsTableView reloadData];
-}
-
-- (IBAction)initButton:(id)sender{
-
-}
-
 - (IBAction)chooseDirectory:(id)sender{
 	int result = nil;
+	NSMenuItem *newDirectoryItem;
+	
 	NSString *selectedFile;
 	result = [aDirectoryChooser runModalForDirectory:nil
                     file:nil types:nil];
 	 if (result == NSOKButton) {
+		// add a new menu item and select it
 		selectedFile = [aDirectoryChooser filename];
-		[directoryNameField setStringValue:selectedFile];
-	 }
+		[directorySelect insertItemWithTitle:selectedFile atIndex:1];
+		[directorySelect selectItemAtIndex:1];
+	}
 
 }
 -(void)dealloc{

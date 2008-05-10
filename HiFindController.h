@@ -13,17 +13,15 @@
 @interface HiFindController : NSObject {
 	IBOutlet NSTextField *filePatternField;
 	IBOutlet NSTextField *regexPatternField;
-	IBOutlet NSTextField *directoryNameField;
 	IBOutlet NSTextView  *resultsView;
 	HiFind *aHiFind;
 	IBOutlet HFDataSource *aHFDataSource;
 	IBOutlet NSBrowser	 *directoryBrowser;
 	IBOutlet NSTableView *resultsTableView;
+	IBOutlet NSPopUpButton *directorySelect;
 	NSOpenPanel *aDirectoryChooser;
 }
 
 - (IBAction)updateDS:(id)sender;
-- (IBAction)updateDSFromFile:(id)sender;
-- (IBAction)initButton:(id)sender;
 - (IBAction)chooseDirectory:(id)sender;
 @end
