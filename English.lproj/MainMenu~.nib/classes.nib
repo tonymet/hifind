@@ -9,8 +9,6 @@
             OUTLETS = {
                 aHFDataSource = HFDataSource; 
                 directoryBrowser = NSBrowser; 
-                directoryName = NSMenuItem; 
-                directoryNameField = NSTextField; 
                 directorySelect = NSPopUpButton; 
                 filePatternField = NSTextField; 
                 regexPatternField = NSTextField; 

@@ -33,18 +33,15 @@
 
 - (IBAction)chooseDirectory:(id)sender{
 	int result = nil;
-	NSMenuItem *newDirectoryItem;
-	
 	NSString *selectedFile;
 	result = [aDirectoryChooser runModalForDirectory:nil
                     file:nil types:nil];
-	 if (result == NSOKButton) {
+	if (result == NSOKButton) {
 		// add a new menu item and select it
 		selectedFile = [aDirectoryChooser filename];
 		[directorySelect insertItemWithTitle:selectedFile atIndex:1];
 		[directorySelect selectItemAtIndex:1];
 	}
-
 }
 -(void)dealloc{
 	if(aHiFind != nil){
