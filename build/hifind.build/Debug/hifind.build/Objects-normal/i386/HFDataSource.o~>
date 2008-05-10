@@ -1,9 +1,11 @@
 /Users/tonym/Documents/workspace/hifind/HFDataSource.m: In function '-[HFDataSource initWithArray:]':
-/Users/tonym/Documents/workspace/hifind/HFDataSource.m:20: warning: conflicting types for '-(id)initWithArray:(NSArray *)fromArray'
-/Users/tonym/Documents/workspace/hifind/HFDataSource.h:18: warning: previous declaration of '-(id)initWithArray:(id)fromArray'
 /Users/tonym/Documents/workspace/hifind/HFDataSource.m:23: warning: assignment from distinct Objective-C type
 /Users/tonym/Documents/workspace/hifind/HFDataSource.m: In function '-[HFDataSource replaceContents:]':
-/Users/tonym/Documents/workspace/hifind/HFDataSource.m:26: warning: conflicting types for '-(id)replaceContents:(NSArray *)fromArray'
-/Users/tonym/Documents/workspace/hifind/HFDataSource.h:19: warning: previous declaration of '-(id)replaceContents:(id)fromArray'
 /Users/tonym/Documents/workspace/hifind/HFDataSource.m:29: warning: assignment from distinct Objective-C type
 /Users/tonym/Documents/workspace/hifind/HFDataSource.m:30: warning: control reaches end of non-void function
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m: In function '-[HFDataSource replaceContentsFrom:]':
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m:34: warning: control reaches end of non-void function
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m: At top level:
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m:55: warning: incomplete implementation of class 'HFDataSource'
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m:55: warning: method definition for '-appendFromArray:' not found
+/Users/tonym/Documents/workspace/hifind/HFDataSource.m:55: warning: method definition for '-appendFromDict:' not found

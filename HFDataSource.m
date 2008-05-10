@@ -29,6 +29,10 @@
 	fileRecords = fromArray;
 }
 
+-(id)replaceContentsFrom:(HiFind *)aHiFind{
+	[self replaceContents:[aHiFind currentRecords]];
+}
+
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView{
 	return [fileRecords count];
 }
@@ -39,15 +43,6 @@
 	NSMutableDictionary *curRecord;
 	curRecord = [fileRecords objectAtIndex: rowIndex];
 	return [curRecord objectForKey:[aTableColumn identifier]];
-}
-
--(void)appendFromDict:(NSDictionary*)fromDict{
-	[fileRecords addObject:fromDict];
-}
-
--(void)appendFromArray:(NSArray*)fromArray{
-	//[fromArray retain];
-	[fileRecords addObjectsFromArray:fromArray];
 }
 
 - (void)dealloc{

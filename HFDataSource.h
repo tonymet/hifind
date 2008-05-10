@@ -8,17 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Appkit/NSTableView.h>
-
+#import "HiFind.h"
 
 @interface HFDataSource : NSObject{
 	NSMutableArray *fileRecords;
 }
 // intialize array
-//-(void)init;
 -(id)initWithArray:(NSArray * )fromArray;
 -(id)replaceContents:(NSArray * )fromArray;
--(void)appendFromDict:(NSDictionary*)fromDict;
--(void)appendFromArray:(NSArray*)fromArray;
+-(id)replaceContentsFrom:(HiFind *)aHiFind;
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView;
 -(id)tableView:(NSTableView *)aTableView
     objectValueForTableColumn:(NSTableColumn *)aTableColumn

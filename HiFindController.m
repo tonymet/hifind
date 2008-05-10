@@ -23,16 +23,11 @@
 }
 
 -(IBAction)updateDS:(id)sender{
-	NSArray *records;
-	records = [[aHiFind allRecords:
-			[aHiFind 
-				grepFilesMatchingPattern:[filePatternField stringValue] 
-				inDirectory:[directoryNameField stringValue] 
-				withRegex:[regexPatternField stringValue]
-			]
-		] retain];
-	[aHFDataSource replaceContents:records];
-	//[records autorelease];
+	[aHiFind grepFilesMatchingPattern:[filePatternField stringValue] 
+			inDirectory:[directoryNameField stringValue] 
+			withRegex:[regexPatternField stringValue]
+	];
+	[aHFDataSource replaceContentsFrom:aHiFind];
 	[resultsTableView reloadData];
 }
 

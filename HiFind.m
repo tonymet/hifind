@@ -6,11 +6,13 @@
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
+#import "HFDataSource.h"
 #import "HiFind.h"
 
-
 @implementation HiFind
-
+-(id)init{
+	theFile = nil;
+}
 
 -(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
 		withRegex:(NSObject*)regexPattern{
@@ -35,7 +37,7 @@
     file = [pipe fileHandleForReading];
 	
     [task launch];
-	return file;
+	theFile = file;
 }
 
 -(NSFileHandle*)readFromFile:(NSString*)fileName{
@@ -53,6 +55,13 @@
 	return string;
 }
 
+-(NSArray *)currentRecords{
+	if(theFile == nil){
+		return nil;
+	}
+	return [self allRecords:theFile];
+}
+
 -(NSArray*)allRecords:(NSFileHandle*)fromFile{
 	NSString *contents;
 	contents = [self fileToString: fromFile];
@@ -65,9 +74,10 @@
 	NSString *curRow;
 	NSEnumerator *enm = [rows objectEnumerator];
 	while(curRow = [enm nextObject]){
-		curRecord = [self toRecord:curRow];
+		curRecord = [[self toRecord:curRow] retain];
 		if(curRecord != nil){
 			[records addObject:curRecord];
+			[curRecord autorelease];
 		}
 	}
 	//[records autorelease];
@@ -89,16 +99,16 @@
 	}
 	
 	@try{
-		curRecord = [NSDictionary dictionaryWithObjectsAndKeys:
+		curRecord = [[NSDictionary dictionaryWithObjectsAndKeys:
 			[fromLine substringWithRange:rName], @"filename" ,
-			[fromLine substringWithRange:rMatchingLine] , @"matching_line" , nil];
+			[fromLine substringWithRange:rMatchingLine] , @"matching_line" , nil] retain];
 
 	}
 	@catch ( NSException  *e){
 		NSLog([NSString stringWithFormat:@"Error parsing line %@", fromLine]);
 		return nil;
 	}
-	//[curRecord release];
+	[curRecord autorelease];
 	return curRecord;
 }
 @end

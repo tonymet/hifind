@@ -9,11 +9,15 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface HiFind : NSObject {}
+@interface HiFind : NSObject {
+NSFileHandle* theFile;
+
+}
 
 -(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
 		withRegex:(NSObject*)regexPattern;
--(NSArray*)allRecords:(NSFileHandle*)fromFile;
+-(NSArray *)allRecords:(NSFileHandle*)fromFile;
+-(NSArray *)currentRecords;
 -(NSObject*)fileToString:(NSFileHandle*)fromFile;
 -(NSDictionary*)toRecord:(NSString*)fromLine;
 -(NSFileHandle*)readFromFile:(NSString*)fileName;
