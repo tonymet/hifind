@@ -1,14 +1,8 @@
 {
     IBClasses = (
-        {
-            ACTIONS = {myAction = id; }; 
-            CLASS = FirstResponder; 
-            LANGUAGE = ObjC; 
-            SUPERCLASS = NSObject; 
-        }, 
         {CLASS = HFDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
-            ACTIONS = {chooseDirectory = id; updateDS = id; }; 
+            ACTIONS = {chooseDirectory = id; directorySelected = id; updateDS = id; }; 
             CLASS = HiFindController; 
             LANGUAGE = ObjC; 
             OUTLETS = {

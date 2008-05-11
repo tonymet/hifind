@@ -1,4 +1,0 @@
-/Users/tonym/Documents/workspace/hifind/HiFind.m: In function '-[HiFind allRecords:]':
-/Users/tonym/Documents/workspace/hifind/HiFind.m:58: warning: assignment from distinct Objective-C type
-/Users/tonym/Documents/workspace/hifind/HiFind.m: In function '-[HiFind toRecord:]':
-/Users/tonym/Documents/workspace/hifind/HiFind.m:96: warning: use '-fobjc-exceptions' to enable Objective-C exception syntax

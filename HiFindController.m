@@ -33,6 +33,7 @@
 
 - (IBAction)chooseDirectory:(id)sender{
 	int result = nil;
+	NSMenuItem *curMenuItem;
 	NSString *selectedFile;
 	result = [aDirectoryChooser runModalForDirectory:nil
                     file:nil types:nil];
@@ -41,7 +42,25 @@
 		selectedFile = [aDirectoryChooser filename];
 		[directorySelect insertItemWithTitle:selectedFile atIndex:1];
 		[directorySelect selectItemAtIndex:1];
+		curMenuItem = [directorySelect itemAtIndex:1];
+		[curMenuItem setTarget:self];
+		[curMenuItem setAction: @selector(directorySelected:)];
+		selectedDirectory = 1;
 	}
+	else{
+		[directorySelect selectItemAtIndex:selectedDirectory];
+	}
+}
+- (IBAction)directorySelected:(id)sender{
+	selectedDirectory = [directorySelect indexOfItem:sender];
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
+	NSLog(@"Application finished launching");
+	NSString *message = [NSString stringWithFormat:@"selected index: %d",
+		[directorySelect indexOfSelectedItem]]; 
+	NSLog(message);
+	selectedDirectory = [directorySelect indexOfSelectedItem];
 }
 -(void)dealloc{
 	if(aHiFind != nil){

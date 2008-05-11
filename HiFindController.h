@@ -20,8 +20,11 @@
 	IBOutlet NSTableView *resultsTableView;
 	IBOutlet NSPopUpButton *directorySelect;
 	NSOpenPanel *aDirectoryChooser;
+	int selectedDirectory;
 }
 
 - (IBAction)updateDS:(id)sender;
 - (IBAction)chooseDirectory:(id)sender;
+- (IBAction)directorySelected:(id)sender;
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification;
 @end
