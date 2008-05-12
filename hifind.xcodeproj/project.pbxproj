@@ -11,6 +11,7 @@
 		2A1AEB260DC3F7AB00CABA83 /* HiFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AEB250DC3F7AB00CABA83 /* HiFind.m */; };
 		2A1AEB490DC3FA1000CABA83 /* HiFindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AEB480DC3FA1000CABA83 /* HiFindController.m */; };
 		2AC693E30DC4243900A4E865 /* HFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC693E20DC4243900A4E865 /* HFDataSource.m */; };
+		2AF8BE1D0DD767D400DC1C8F /* HFOutlineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8BE1C0DD767D400DC1C8F /* HFOutlineDataSource.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -33,6 +34,8 @@
 		2A1AEB480DC3FA1000CABA83 /* HiFindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiFindController.m; sourceTree = "<group>"; };
 		2AC693E10DC4243900A4E865 /* HFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDataSource.h; sourceTree = "<group>"; };
 		2AC693E20DC4243900A4E865 /* HFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDataSource.m; sourceTree = "<group>"; };
+		2AF8BE1B0DD767D400DC1C8F /* HFOutlineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOutlineDataSource.h; sourceTree = "<group>"; };
+		2AF8BE1C0DD767D400DC1C8F /* HFOutlineDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFOutlineDataSource.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* hifind_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hifind_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* hifind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hifind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +64,8 @@
 				2A1AEB250DC3F7AB00CABA83 /* HiFind.m */,
 				2A1AEAF60DC3F35300CABA83 /* SayHi.h */,
 				2A1AEAF70DC3F35300CABA83 /* SayHi.m */,
+				2AF8BE1B0DD767D400DC1C8F /* HFOutlineDataSource.h */,
+				2AF8BE1C0DD767D400DC1C8F /* HFOutlineDataSource.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				2A1AEB260DC3F7AB00CABA83 /* HiFind.m in Sources */,
 				2A1AEB490DC3FA1000CABA83 /* HiFindController.m in Sources */,
 				2AC693E30DC4243900A4E865 /* HFDataSource.m in Sources */,
+				2AF8BE1D0DD767D400DC1C8F /* HFOutlineDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,8 @@
 }
 // intialize array
 -(id)initWithArray:(NSArray * )fromArray;
--(id)replaceContents:(NSArray * )fromArray;
--(id)replaceContentsFrom:(HiFind *)aHiFind;
+-(void)replaceContents:(NSArray * )fromArray;
+-(void)replaceContentsFrom:(HiFind *)aHiFind;
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView;
 -(id)tableView:(NSTableView *)aTableView
     objectValueForTableColumn:(NSTableColumn *)aTableColumn

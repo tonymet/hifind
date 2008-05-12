@@ -30,6 +30,14 @@
 	[aHFDataSource replaceContentsFrom:aHiFind];
 	[resultsTableView reloadData];
 }
+- (IBAction)updateDSOutline:(id)sender{
+	[aHiFind grepFilesMatchingPattern:[filePatternField stringValue] 
+			inDirectory:[directorySelect titleOfSelectedItem] 
+			withRegex:[regexPatternField stringValue]
+	];
+	[aHFOutlineDataSource replaceContentsFrom:aHiFind];
+	[resultsOutlineTableView reloadData];
+}
 
 - (IBAction)chooseDirectory:(id)sender{
 	int result = nil;

@@ -11,7 +11,9 @@
 
 @implementation HiFind
 -(id)init{
+	[super init];
 	theFile = nil;
+	return self;
 }
 
 -(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
@@ -38,6 +40,7 @@
 	
     [task launch];
 	theFile = file;
+	return file;
 }
 
 -(NSFileHandle*)readFromFile:(NSString*)fileName{
@@ -62,6 +65,13 @@
 	return [self allRecords:theFile];
 }
 
+-(NSDictionary *)currentRecordsDictionary{
+	if(theFile == nil){
+		return nil;
+	}
+	return [self allRecordsDictionary:theFile];
+}
+
 -(NSArray*)allRecords:(NSFileHandle*)fromFile{
 	NSString *contents;
 	contents = [self fileToString: fromFile];
@@ -80,9 +90,44 @@
 			[curRecord autorelease];
 		}
 	}
-	//[records autorelease];
 	return [records autorelease];
 }
+
+/**
+ * Return a mapping of matches as filename => NSMutableArray of matches
+ */
+-(NSDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile{
+	NSString *contents;
+	contents = [self fileToString: fromFile];
+	NSArray *rows;
+	// divide file by newlines
+	rows = [contents componentsSeparatedByString:@"\n"];
+	NSMutableDictionary *records;
+	records = [[NSMutableDictionary dictionaryWithCapacity:[rows count]] retain];
+	NSDictionary *curRecord;
+	NSString *curRow;
+	NSEnumerator *enm = [rows objectEnumerator];
+	NSMutableArray *curMatchList;
+	NSString *curFileName;
+	while(curRow = [enm nextObject]){
+		curRecord = [[self toRecord:curRow] retain];
+		if(curRecord != nil){
+			curFileName = [curRecord objectForKey:@"filename"];
+			curMatchList = [records objectForKey:curFileName];
+			// build a new MutableArray if no match and add it to filename
+			if(curMatchList == nil){
+				curMatchList = [NSMutableArray arrayWithObject:curRecord];
+				[records setObject:curMatchList forKey:curFileName];
+			}
+			else{
+				[curMatchList addObject:curRecord];
+			}
+			//[curRecord autorelease];
+		}
+	}
+	return records;
+}
+	
 -(NSDictionary*)toRecord:(NSString*)fromLine{
 	NSDictionary *curRecord;
 	NSRange rName, rMatchingLine;

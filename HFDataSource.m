@@ -17,19 +17,19 @@
 	return self;
 }
 
--(id)initWithArray:(NSArray * )fromArray{
+-(id)initWithArray:(NSMutableArray * )fromArray{
 	[super init];
 	[fromArray retain];
 	fileRecords = fromArray;
 	return self;
 }
--(id)replaceContents:(NSArray * )fromArray{
+-(void)replaceContents:(NSArray * )fromArray{
 	[fromArray retain];
 	[fileRecords release];
 	fileRecords = fromArray;
 }
 
--(id)replaceContentsFrom:(HiFind *)aHiFind{
+-(void)replaceContentsFrom:(HiFind *)aHiFind{
 	[self replaceContents:[aHiFind currentRecords]];
 }
 

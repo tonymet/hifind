@@ -7,6 +7,7 @@
 //
 #import "HiFind.h"
 #import "HFDataSource.h"
+#import "HFOutlineDataSource.h"
 #import <Cocoa/Cocoa.h>
 
 
@@ -16,6 +17,8 @@
 	IBOutlet NSTextView  *resultsView;
 	HiFind *aHiFind;
 	IBOutlet HFDataSource *aHFDataSource;
+	IBOutlet HFOutlineDataSource *aHFOutlineDataSource;
+	IBOutlet NSOutlineView *resultsOutlineTableView;
 	IBOutlet NSBrowser	 *directoryBrowser;
 	IBOutlet NSTableView *resultsTableView;
 	IBOutlet NSPopUpButton *directorySelect;
@@ -24,6 +27,7 @@
 }
 
 - (IBAction)updateDS:(id)sender;
+- (IBAction)updateDSOutline:(id)sender;
 - (IBAction)chooseDirectory:(id)sender;
 - (IBAction)directorySelected:(id)sender;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification;

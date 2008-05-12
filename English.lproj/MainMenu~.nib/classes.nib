@@ -1,16 +1,24 @@
 {
     IBClasses = (
         {CLASS = HFDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HFOutlineDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
-            ACTIONS = {chooseDirectory = id; updateDS = id; }; 
+            ACTIONS = {
+                chooseDirectory = id; 
+                directorySelected = id; 
+                updateDS = id; 
+                updateDSOutline = id; 
+            }; 
             CLASS = HiFindController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
                 aHFDataSource = HFDataSource; 
+                aHFOutlineDataSource = HFOutlineDataSource; 
                 directoryBrowser = NSBrowser; 
                 directorySelect = NSPopUpButton; 
                 filePatternField = NSTextField; 
                 regexPatternField = NSTextField; 
+                resultsOutlineTableView = NSOutlineView; 
                 resultsTableView = NSTableView; 
                 resultsView = NSTextView; 
             }; 
