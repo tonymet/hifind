@@ -16,10 +16,11 @@ NSFileHandle* theFile;
 
 -(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
 		withRegex:(NSObject*)regexPattern;
--(NSArray *)allRecords:(NSFileHandle*)fromFile;
--(NSDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile;
--(NSArray *)currentRecords;
--(NSObject*)fileToString:(NSFileHandle*)fromFile;
+-(NSMutableArray *)allRecords:(NSFileHandle*)fromFile;
+-(NSMutableDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile;
+-(NSMutableArray *)currentRecords;
+-(NSMutableDictionary *)currentRecordsDictionary;
+-(NSString*)fileToString:(NSFileHandle*)fromFile;
 -(NSDictionary*)toRecord:(NSString*)fromLine;
 -(NSFileHandle*)readFromFile:(NSString*)fileName;
 @end

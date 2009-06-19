@@ -49,7 +49,7 @@
 	return file;
 }
 
--(NSObject*)fileToString:(NSFileHandle*)fromFile{
+-(NSString*)fileToString:(NSFileHandle*)fromFile{
 	NSData *data;
 	NSString *string;
     data = [fromFile readDataToEndOfFile];
@@ -58,21 +58,21 @@
 	return string;
 }
 
--(NSArray *)currentRecords{
+-(NSMutableArray *)currentRecords{
 	if(theFile == nil){
 		return nil;
 	}
 	return [self allRecords:theFile];
 }
 
--(NSDictionary *)currentRecordsDictionary{
+-(NSMutableDictionary *)currentRecordsDictionary{
 	if(theFile == nil){
 		return nil;
 	}
 	return [self allRecordsDictionary:theFile];
 }
 
--(NSArray*)allRecords:(NSFileHandle*)fromFile{
+-(NSMutableArray*)allRecords:(NSFileHandle*)fromFile{
 	NSString *contents;
 	contents = [self fileToString: fromFile];
 	NSArray *rows;
@@ -96,7 +96,7 @@
 /**
  * Return a mapping of matches as filename => NSMutableArray of matches
  */
--(NSDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile{
+-(NSMutableDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile{
 	NSString *contents;
 	contents = [self fileToString: fromFile];
 	NSArray *rows;

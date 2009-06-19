@@ -14,8 +14,8 @@
 	NSMutableArray *fileRecords;
 }
 // intialize array
--(id)initWithArray:(NSArray * )fromArray;
--(void)replaceContents:(NSArray * )fromArray;
+-(id)initWithArray:(NSMutableArray * )fromArray;
+-(void)replaceContents:(NSMutableArray * )fromArray;
 -(void)replaceContentsFrom:(HiFind *)aHiFind;
 -(int)numberOfRowsInTableView:(NSTableView *)aTableView;
 -(id)tableView:(NSTableView *)aTableView

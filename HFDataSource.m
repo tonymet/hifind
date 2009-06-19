@@ -23,7 +23,7 @@
 	fileRecords = fromArray;
 	return self;
 }
--(void)replaceContents:(NSArray * )fromArray{
+-(void)replaceContents:(NSMutableArray * )fromArray{
 	[fromArray retain];
 	[fileRecords release];
 	fileRecords = fromArray;

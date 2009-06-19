@@ -13,8 +13,8 @@
 @interface HFOutlineDataSource : NSObject {
 	NSMutableDictionary *fileRecords;
 }
+- (void)replaceContents:(NSMutableDictionary * )fromDict;
 - (void)replaceContentsFrom:(HiFind *)aHiFind;
-- (void)replaceContents:(NSDictionary * )fromDict;
 - (id)outlineView:(NSOutlineView *)outlineView child:(int)index ofItem:(id)item;
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item;  
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item;

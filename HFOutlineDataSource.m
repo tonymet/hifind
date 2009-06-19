@@ -16,14 +16,14 @@
 	return self;
 }
 
--(void)replaceContents:(NSDictionary * )fromDict{
+-(void)replaceContents:(NSMutableDictionary * )fromDict{
 	[fromDict retain];
 	//[fileRecords release];
 	fileRecords = fromDict;
 }
 
 -(void)replaceContentsFrom:(HiFind *)aHiFind{
-	[self replaceContents:[aHiFind currentRecordsDictionary]];
+       [self replaceContents:[aHiFind currentRecordsDictionary]];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item{
