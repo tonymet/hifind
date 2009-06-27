@@ -7,7 +7,7 @@
 //
 
 #import "HFDataSource.h"
-#import "HiFind.h"
+#import <HiFind/HiFind.h>
 
 @implementation HiFind
 -(id)init{
@@ -16,7 +16,7 @@
 	return self;
 }
 
--(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
+-(NSFileHandle*)grepFiles:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
 		withRegex:(NSObject*)regexPattern{
 	NSTask *task;
     task = [[NSTask alloc] init];

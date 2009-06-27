@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Appkit/NSTableView.h>
-#import "HiFind.h"
+#import <HiFind/HiFind.h>
 
 @interface HFDataSource : NSObject{
 	NSMutableArray *fileRecords;

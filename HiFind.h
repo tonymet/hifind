@@ -14,7 +14,7 @@ NSFileHandle* theFile;
 
 }
 
--(NSFileHandle*)grepFilesMatchingPattern:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
+-(NSFileHandle*)grepFiles:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
 		withRegex:(NSObject*)regexPattern;
 -(NSMutableArray *)allRecords:(NSFileHandle*)fromFile;
 -(NSMutableDictionary*)allRecordsDictionary:(NSFileHandle*)fromFile;

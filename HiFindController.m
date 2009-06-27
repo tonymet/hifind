@@ -23,7 +23,7 @@
 }
 
 -(IBAction)updateDS:(id)sender{
-	[aHiFind grepFilesMatchingPattern:[filePatternField stringValue] 
+	[aHiFind grepFiles:[filePatternField stringValue] 
 			inDirectory:[directorySelect titleOfSelectedItem] 
 			withRegex:[regexPatternField stringValue]
 	];
@@ -31,7 +31,7 @@
 	[resultsTableView reloadData];
 }
 - (IBAction)updateDSOutline:(id)sender{
-	[aHiFind grepFilesMatchingPattern:[filePatternField stringValue] 
+	[aHiFind grepFiles:[filePatternField stringValue] 
 			inDirectory:[directorySelect titleOfSelectedItem] 
 			withRegex:[regexPatternField stringValue]
 	];

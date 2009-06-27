@@ -5,7 +5,7 @@
 //  Created by Anthony Metzidis on 4/26/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
-#import "HiFind.h"
+#import <HiFind/HiFind.h>
 #import "HFDataSource.h"
 #import "HFOutlineDataSource.h"
 #import <Cocoa/Cocoa.h>

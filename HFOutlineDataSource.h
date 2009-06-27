@@ -8,7 +8,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "HiFind.h"
+#import <HiFind/HiFind.h>
 
 @interface HFOutlineDataSource : NSObject {
 	NSMutableDictionary *fileRecords;

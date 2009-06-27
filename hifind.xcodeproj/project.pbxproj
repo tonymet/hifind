@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A1AEB260DC3F7AB00CABA83 /* HiFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AEB250DC3F7AB00CABA83 /* HiFind.m */; settings = {COMPILER_FLAGS = "-fobjc-exceptions"; }; };
 		2A1AEB490DC3FA1000CABA83 /* HiFindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AEB480DC3FA1000CABA83 /* HiFindController.m */; };
+		2A8143940FF6D1C300F3F902 /* HiFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AEB250DC3F7AB00CABA83 /* HiFind.m */; };
+		2A8143980FF6D1D700F3F902 /* HiFind.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1AEB240DC3F7AB00CABA83 /* HiFind.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A8143DF0FF6D30100F3F902 /* HiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A81438A0FF6D19F00F3F902 /* HiFind.framework */; };
+		2A8144000FF6D3D000F3F902 /* TestHiFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */; };
+		2A8144020FF6D3E700F3F902 /* HiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A81438A0FF6D19F00F3F902 /* HiFind.framework */; };
 		2AC693E30DC4243900A4E865 /* HFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC693E20DC4243900A4E865 /* HFDataSource.m */; };
 		2AF8BE1D0DD767D400DC1C8F /* HFOutlineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8BE1C0DD767D400DC1C8F /* HFOutlineDataSource.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
@@ -16,6 +20,16 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A8143AE0FF6D21200F3F902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			remoteInfo = HiFind;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -29,6 +43,12 @@
 		2A1AEB250DC3F7AB00CABA83 /* HiFind.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = HiFind.m; sourceTree = "<group>"; };
 		2A1AEB470DC3FA1000CABA83 /* HiFindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiFindController.h; sourceTree = "<group>"; };
 		2A1AEB480DC3FA1000CABA83 /* HiFindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiFindController.m; sourceTree = "<group>"; };
+		2A81438A0FF6D19F00F3F902 /* HiFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HiFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A81438B0FF6D19F00F3F902 /* HiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HiFind-Info.plist"; sourceTree = "<group>"; };
+		2A8143EE0FF6D3B900F3F902 /* TestHiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHiFind.h; sourceTree = "<group>"; };
+		2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHiFind.m; sourceTree = "<group>"; };
+		2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TestHiFind.octest; path = build/Debug/TestHiFind.octest; sourceTree = "<group>"; };
+		2A8143F70FF6D3C800F3F902 /* TestHiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestHiFind-Info.plist"; sourceTree = "<group>"; };
 		2AC693E10DC4243900A4E865 /* HFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDataSource.h; sourceTree = "<group>"; };
 		2AC693E20DC4243900A4E865 /* HFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDataSource.m; sourceTree = "<group>"; };
 		2AF8BE1B0DD767D400DC1C8F /* HFOutlineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOutlineDataSource.h; sourceTree = "<group>"; };
@@ -39,10 +59,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A8143880FF6D19F00F3F902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8143F30FF6D3C800F3F902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8144020FF6D3E700F3F902 /* HiFind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8143DF0FF6D30100F3F902 /* HiFind.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* hifind.app */,
+				2A81438A0FF6D19F00F3F902 /* HiFind.framework */,
+				2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,11 +132,14 @@
 		29B97314FDCFA39411CA2CEA /* hifind */ = {
 			isa = PBXGroup;
 			children = (
+				2A8143EB0FF6D36600F3F902 /* test */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2A81438B0FF6D19F00F3F902 /* HiFind-Info.plist */,
+				2A8143F70FF6D3C800F3F902 /* TestHiFind-Info.plist */,
 			);
 			name = hifind;
 			sourceTree = "<group>";
@@ -131,9 +172,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A8143EB0FF6D36600F3F902 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				2A8143EE0FF6D3B900F3F902 /* TestHiFind.h */,
+				2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2A8143850FF6D19F00F3F902 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8143980FF6D1D700F3F902 /* HiFind.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2A8143890FF6D19F00F3F902 /* HiFind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A81438C0FF6D19F00F3F902 /* Build configuration list for PBXNativeTarget "HiFind" */;
+			buildPhases = (
+				2A8143850FF6D19F00F3F902 /* Headers */,
+				2A8143860FF6D19F00F3F902 /* Resources */,
+				2A8143870FF6D19F00F3F902 /* Sources */,
+				2A8143880FF6D19F00F3F902 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiFind;
+			productName = HiFind;
+			productReference = 2A81438A0FF6D19F00F3F902 /* HiFind.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A8143F50FF6D3C800F3F902 /* TestHiFind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8143F80FF6D3C800F3F902 /* Build configuration list for PBXNativeTarget "TestHiFind" */;
+			buildPhases = (
+				2A8143F10FF6D3C800F3F902 /* Resources */,
+				2A8143F20FF6D3C800F3F902 /* Sources */,
+				2A8143F30FF6D3C800F3F902 /* Frameworks */,
+				2A8143F40FF6D3C800F3F902 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHiFind;
+			productName = TestHiFind;
+			productReference = 2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D1107260486CEB800E47090 /* hifind */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "hifind" */;
@@ -145,6 +242,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2A8143AF0FF6D21200F3F902 /* PBXTargetDependency */,
 			);
 			name = hifind;
 			productInstallPath = "$(HOME)/Applications";
@@ -163,11 +261,27 @@
 			projectDirPath = "";
 			targets = (
 				8D1107260486CEB800E47090 /* hifind */,
+				2A8143890FF6D19F00F3F902 /* HiFind */,
+				2A8143F50FF6D3C800F3F902 /* TestHiFind */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A8143860FF6D19F00F3F902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8143F10FF6D3C800F3F902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,13 +293,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A8143F40FF6D3C800F3F902 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2A8143870FF6D19F00F3F902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8143940FF6D1C300F3F902 /* HiFind.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8143F20FF6D3C800F3F902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8144000FF6D3D000F3F902 /* TestHiFind.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				2A1AEB260DC3F7AB00CABA83 /* HiFind.m in Sources */,
 				2A1AEB490DC3FA1000CABA83 /* HiFindController.m in Sources */,
 				2AC693E30DC4243900A4E865 /* HFDataSource.m in Sources */,
 				2AF8BE1D0DD767D400DC1C8F /* HFOutlineDataSource.m in Sources */,
@@ -193,6 +338,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A8143AF0FF6D21200F3F902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			targetProxy = 2A8143AE0FF6D21200F3F902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -214,6 +367,119 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A81438D0FF6D19F00F3F902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Debug\"";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "HiFind-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = HiFind;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2A81438E0FF6D19F00F3F902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "HiFind-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = HiFind;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A8143F90FF6D3C800F3F902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "TestHiFind-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TestHiFind;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		2A8143FA0FF6D3C800F3F902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "TestHiFind-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TestHiFind;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,6 +535,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A81438C0FF6D19F00F3F902 /* Build configuration list for PBXNativeTarget "HiFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A81438D0FF6D19F00F3F902 /* Debug */,
+				2A81438E0FF6D19F00F3F902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8143F80FF6D3C800F3F902 /* Build configuration list for PBXNativeTarget "TestHiFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8143F90FF6D3C800F3F902 /* Debug */,
+				2A8143FA0FF6D3C800F3F902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "hifind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
