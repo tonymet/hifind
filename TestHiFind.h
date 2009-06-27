@@ -7,10 +7,13 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import <HiFind/HiFind.h
+#import <HiFind/HiFind.h>
 
 @interface TestHiFind : SenTestCase {
-
+HiFind *aHiFind;
 }
+- (void) testGrepFiles;
+- (void) testGrepFiles2;
+- (void) setUp;
 
 @end

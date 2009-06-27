@@ -13,6 +13,7 @@
 		2A8143DF0FF6D30100F3F902 /* HiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A81438A0FF6D19F00F3F902 /* HiFind.framework */; };
 		2A8144000FF6D3D000F3F902 /* TestHiFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */; };
 		2A8144020FF6D3E700F3F902 /* HiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A81438A0FF6D19F00F3F902 /* HiFind.framework */; };
+		2A81445C0FF6D6E000F3F902 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A81445B0FF6D6E000F3F902 /* SenTestingKit.framework */; };
 		2AC693E30DC4243900A4E865 /* HFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC693E20DC4243900A4E865 /* HFDataSource.m */; };
 		2AF8BE1D0DD767D400DC1C8F /* HFOutlineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8BE1C0DD767D400DC1C8F /* HFOutlineDataSource.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
@@ -23,6 +24,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		2A8143AE0FF6D21200F3F902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			remoteInfo = HiFind;
+		};
+		2A8144860FF6D7A200F3F902 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
@@ -47,8 +55,9 @@
 		2A81438B0FF6D19F00F3F902 /* HiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HiFind-Info.plist"; sourceTree = "<group>"; };
 		2A8143EE0FF6D3B900F3F902 /* TestHiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHiFind.h; sourceTree = "<group>"; };
 		2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHiFind.m; sourceTree = "<group>"; };
-		2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TestHiFind.octest; path = build/Debug/TestHiFind.octest; sourceTree = "<group>"; };
+		2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHiFind.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8143F70FF6D3C800F3F902 /* TestHiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestHiFind-Info.plist"; sourceTree = "<group>"; };
+		2A81445B0FF6D6E000F3F902 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
 		2AC693E10DC4243900A4E865 /* HFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDataSource.h; sourceTree = "<group>"; };
 		2AC693E20DC4243900A4E865 /* HFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDataSource.m; sourceTree = "<group>"; };
 		2AF8BE1B0DD767D400DC1C8F /* HFOutlineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOutlineDataSource.h; sourceTree = "<group>"; };
@@ -71,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8144020FF6D3E700F3F902 /* HiFind.framework in Frameworks */,
+				2A81445C0FF6D6E000F3F902 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A81445B0FF6D6E000F3F902 /* SenTestingKit.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -225,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2A8144870FF6D7A200F3F902 /* PBXTargetDependency */,
 			);
 			name = TestHiFind;
 			productName = TestHiFind;
@@ -345,6 +357,11 @@
 			target = 2A8143890FF6D19F00F3F902 /* HiFind */;
 			targetProxy = 2A8143AE0FF6D21200F3F902 /* PBXContainerItemProxy */;
 		};
+		2A8144870FF6D7A200F3F902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			targetProxy = 2A8144860FF6D7A200F3F902 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -432,6 +449,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -459,6 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;

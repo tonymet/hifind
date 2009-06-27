@@ -16,8 +16,8 @@
 	return self;
 }
 
--(NSFileHandle*)grepFiles:(NSObject*)filePattern inDirectory:(NSObject*) directoryName
-		withRegex:(NSObject*)regexPattern{
+-(NSFileHandle*)grepFiles:(NSString*)filePattern inDirectory:(NSString*) directoryName
+		withRegex:(NSString*)regexPattern{
 	NSTask *task;
     task = [[NSTask alloc] init];
     [task setLaunchPath: @"/bin/bash"];
