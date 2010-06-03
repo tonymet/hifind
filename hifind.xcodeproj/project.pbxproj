@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,14 +27,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			remoteGlobalIDString = 2A8143890FF6D19F00F3F902;
 			remoteInfo = HiFind;
 		};
 		2A8144860FF6D7A200F3F902 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A8143890FF6D19F00F3F902 /* HiFind */;
+			remoteGlobalIDString = 2A8143890FF6D19F00F3F902;
 			remoteInfo = HiFind;
 		};
 /* End PBXContainerItemProxy section */
@@ -52,12 +52,12 @@
 		2A1AEB470DC3FA1000CABA83 /* HiFindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiFindController.h; sourceTree = "<group>"; };
 		2A1AEB480DC3FA1000CABA83 /* HiFindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiFindController.m; sourceTree = "<group>"; };
 		2A81438A0FF6D19F00F3F902 /* HiFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HiFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A81438B0FF6D19F00F3F902 /* HiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HiFind-Info.plist"; sourceTree = "<group>"; };
+		2A81438B0FF6D19F00F3F902 /* HiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HiFind-Info.plist"; sourceTree = "<group>"; };
 		2A8143EE0FF6D3B900F3F902 /* TestHiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHiFind.h; sourceTree = "<group>"; };
 		2A8143EF0FF6D3B900F3F902 /* TestHiFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHiFind.m; sourceTree = "<group>"; };
 		2A8143F60FF6D3C800F3F902 /* TestHiFind.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHiFind.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A8143F70FF6D3C800F3F902 /* TestHiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestHiFind-Info.plist"; sourceTree = "<group>"; };
-		2A81445B0FF6D6E000F3F902 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A8143F70FF6D3C800F3F902 /* TestHiFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestHiFind-Info.plist"; sourceTree = "<group>"; };
+		2A81445B0FF6D6E000F3F902 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2AC693E10DC4243900A4E865 /* HFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDataSource.h; sourceTree = "<group>"; };
 		2AC693E20DC4243900A4E865 /* HFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDataSource.m; sourceTree = "<group>"; };
 		2AF8BE1B0DD767D400DC1C8F /* HFOutlineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOutlineDataSource.h; sourceTree = "<group>"; };
@@ -268,9 +268,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hifind" */;
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* hifind */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* hifind */,
 				2A8143890FF6D19F00F3F902 /* HiFind */,
@@ -545,7 +547,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -555,7 +557,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
